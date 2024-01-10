@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "71fe22aa-d542-4a10-bef1-8d67118de0b4",
+		"name": "supplier",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6242499"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"supplier1\",\n    \"emailAddress\": \"supplier1@carrier.com\",\n    \"category\": \"Services\",\n    \"description\": \"description testing\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost}}/api/suppliers/create",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"api",
+						"suppliers",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost}}/api/suppliers/delete/4",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"api",
+						"suppliers",
+						"delete",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/api/suppliers/list",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"api",
+						"suppliers",
+						"list"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
